@@ -7,16 +7,12 @@
 
 .Catalog-Aside {
   &_left {
-    margin-left: -1px;
-
     .Catalog-Link {
       border-radius: 10px 0 0 10px;
     }
   }
 
   &_right {
-    margin-right: -1px;
-
     .Catalog-Link {
       border-radius: 0 10px 10px 0;
     }
