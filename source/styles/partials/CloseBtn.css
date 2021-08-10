@@ -16,7 +16,8 @@
     width: 24px;
     height: 2px;
     background-color: var(--border-color);
-    transition-duration: 0.2a
+    transition-duration: 0.2px;
+    transition-property: background;
   }
 
   &::before {
