@@ -1,0 +1,46 @@
+.MainNav-List {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.MainNav-Item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.is-desktop {
+    display: none;
+  }
+}
+
+.MainNav-Link {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-color);
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .MainNav-Item {
+    &.is-desktop {
+      display: block;
+    }
+  }
+}

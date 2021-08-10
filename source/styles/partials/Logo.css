@@ -1,0 +1,18 @@
+.Logo {
+  display: block;
+  width: 210px;
+  height: 130px;
+}
+
+.Logo-Image {
+  display: block;
+  width: 210px;
+  height: 111px;
+}
+
+.Logo-Text {
+  display: block;
+  width: 120px;
+  height: 9px;
+  margin: 10px auto 0 auto;
+}

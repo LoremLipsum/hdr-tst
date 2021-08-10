@@ -1,0 +1,26 @@
+:root {
+  --main-font: Roboto, Arial, sans-serif;
+
+  --black: hsl(0,0%,15%);
+  --white: hsl(0,0%,100%);
+
+  --main-color: hsl(48, 100%, 50%);
+
+  --font-h: 0;
+  --font-s: 0%;
+  --font-l: 15%;
+  --font-color: hsl(var(--font-h),var(--font-s),var(--font-l));
+
+  --border-color: hsl(0,0%,85%);
+  --error: hsl(0,100%,0%);
+
+  --tablet: 970px;
+  --desktop: 1230px;
+  --pads: 20px;
+}
+
+@media screen and (min-width: 1230px) {
+  :root {
+    --pads: 30px;
+  }
+}

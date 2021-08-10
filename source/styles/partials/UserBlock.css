@@ -1,0 +1,30 @@
+.UserBlock-Item {
+  margin-right: 5px;
+
+  &::after {
+    content: "|";
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  &:last-child {
+    margin-rigth: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.UserBlock-Link {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-color);
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

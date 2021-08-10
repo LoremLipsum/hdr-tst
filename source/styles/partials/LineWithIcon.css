@@ -1,0 +1,56 @@
+.LineWithIcon {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 26px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-color);
+  text-decoration: underline;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &_dotted {
+    text-decoration-style: dotted;
+  }
+
+  &_cart {
+    &::before {
+      background-image: url("../images/shopping-cart.svg");
+    }
+  }
+
+  &_favorits {
+    &::before {
+      background-image: url("../images/star.svg");
+    }
+  }
+
+  &_balance {
+    &::before {
+      background-image: url("../images/balance.svg");
+    }
+  }
+
+  &_arrow {
+    padding-left: 16px;
+
+    &::before {
+      background-image: url("../images/play.svg");
+      background-size: 8px 8px;
+    }
+  }
+}

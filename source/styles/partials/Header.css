@@ -1,0 +1,89 @@
+.Header {
+  padding-top: 20px;
+  background-color: var(--white);
+}
+
+.Header-Inner {
+  min-width: var(--tablet);
+  max-width: var(--desktop);
+  margin: 0 auto;
+  padding: 0 var(--pads);
+}
+
+.Header-Holder {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  column-gap: 30px;
+}
+
+.Header-MainTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: -5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.Header-UserBlock {
+  margin-left: 20px;
+}
+
+.Header-MainBottom {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 17px;
+}
+
+.Header-Banner {
+  display: none;
+}
+
+.Header-OrderLinks {
+  min-width: 140px;
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Header-OrderList {
+  width: 240px;
+  margin-right: auto;
+}
+
+.Header-Contacts {
+  margin-left: 30px;
+}
+
+.Header-Catalog {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1230px) {
+  .MainNav-Item {
+    &.is-desktop {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .Header-Banner {
+    display: block;
+    width: 254px;
+    height: 70px;
+    margin-right: 30px;
+    background-color: hsl(0,0%,90%);
+  }
+}

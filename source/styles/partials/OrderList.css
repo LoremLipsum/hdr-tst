@@ -1,0 +1,26 @@
+.OrderList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+
+.OrderList-Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition-duration: 0.2s;
+  transition-property: border;
+
+  img {
+    display: block;
+    max-width: 50px;
+  }
+
+  &:hover {
+    border-color: var(--black);
+  }
+}

@@ -1,0 +1,111 @@
+.Search {
+  position: relative;
+
+  form {
+    position: relative;
+  }
+
+  &:focus:not(:focus-within) {
+    .Search-Panel {
+      display: none;
+    }
+  }
+
+  &.is-show,
+  &:focus-within {
+    .Search-Panel {
+      display: block;
+    }
+  }
+
+  &.is-hide {
+    .Search-Panel {
+      display: none;
+    }
+  }
+}
+
+.Search-Link {
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--font-color);
+  }
+
+  &:hover {
+    &::before {
+      background-color: hsla(var(--font-h),var(--font-s),var(--font-l),0.5);
+    }
+  }
+
+  &_submit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--black);
+
+    &::before {
+      background-color: var(--main-color);
+    }
+
+    &:hover {
+      background-color: var(--main-color);
+
+      &::before {
+        background-color: var(--black);
+      }
+    }
+  }
+}
+
+.Search-Panel {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  display: none;
+  width: 500px;
+  padding: 10px 50px 10px 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow:
+    0 2px 3px 0 hsla(0,0%,0%,0.1),
+    0 0 3px 0 hsla(0,0%,0%,0.15);
+}
+
+.Search-Input {
+  width: 100%;
+  padding: 8px 50px 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--white);
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--black);
+  }
+
+  &.is-error {
+    border-color: var(--error);
+  }
+}
+
+.Search-CloseBtn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+@media screen and (min-width: 1230px) {
+  .Search-Link {
+    padding: 8px 10px;
+  }
+}

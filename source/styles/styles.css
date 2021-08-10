@@ -1,0 +1,15 @@
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+@import "partials/Page";
+@import "partials/VisuallyHidden";
+@import "partials/CloseBtn";
+@import "partials/LineWithIcon";
+@import "partials/Logo";
+@import "partials/MainNav";
+@import "partials/UserBlock";
+@import "partials/OrderList";
+@import "partials/HeaderContacts";
+@import "partials/Catalog";
+@import "partials/Search";
+@import "partials/Header";
