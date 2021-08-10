@@ -6,13 +6,12 @@
     "autoprefixer": "10.2.5",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "editorconfig-cli": "^0.3.0",
+    "@htmlacademy/editorconfig-cli": "1.0.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-nunjucks": "^5.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.0",
-    "gulp-rename": "^2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
     "nunjucks": "^3.2.3",
@@ -26,14 +25,15 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/styles/**/*.css\" --syntax css",
+    "stylelint": "stylelint source/**/*.css",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
-    "not dead"
+    "not dead",
+    "not ie <= 11"
   ],
   "editorconfig-cli": [
     "*.json",

@@ -23,8 +23,8 @@ jobs:
       - name: Installing Dependencies
         run: npm ci
 
-      - name: Linting
-        run: npm test
+      # - name: Linting
+      #   run: npm test
 
       - name: Building
         run: npm run build
