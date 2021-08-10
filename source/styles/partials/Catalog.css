@@ -25,6 +25,7 @@
   .Catalog-Link {
     background-color: var(--main-color);
     color: var(--font-color);
+    text-transform: uppercase;
 
     &:hover {
       color: hsla(var(--font-h),var(--font-s),var(--font-l),0.5)
