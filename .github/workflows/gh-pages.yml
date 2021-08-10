@@ -21,18 +21,18 @@ jobs:
           node-version: '14.x'
 
       - name: Installing Dependencies
-        run: npm ci
+        run: npm install
 
       # - name: Linting
-      #   run: npm test
+      #   run: npm run lint
 
       - name: Building
         run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FOLDER: ./build
+          FOLDER: ./dist
           BRANCH: gh-pages
-          SINGLE_COMMIT: false
+          SINGLE_COMMIT: true
